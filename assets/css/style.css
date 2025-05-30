@@ -1,26 +1,26 @@
 @charset "UTF-8";
 
-/* RESET */
+/* Para resetar margin e padding  */
 * {
     margin: 0;
     padding: 0;
-        
+
 }
 
 body {
     background-color: #e8e6f0;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+    min-height: 100px;
 }
 
-/* HEADER — cor ajustada */
 header {
-    background-color: #f6b6b6; /* tom de rosa */
-    padding: 20px 10px;
+    background-color: #f6b6b6;
+    padding: 20px;
     box-shadow: 0 0 15px rgb(73, 0, 107);
     position: relative;
     height: 150px;
     overflow: hidden;
+    text-align: center;
 }
 
 .imgAnimation {
@@ -36,6 +36,7 @@ header {
     from {
         offset-distance: 0%;
     }
+
     to {
         offset-distance: 100%;
     }
@@ -55,24 +56,21 @@ nav .container {
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin: 15px;
-    font-size: large;
+    padding: 10px 0;
 }
+
 
 a {
     text-decoration: none;
     color: #ffffff;
 }
 
-/* SEÇÕES GERAIS */
 section {
-    
     margin: 20px auto;
     padding: 25px;
     max-width: 800px;
 }
 
-/* TÍTULOS */
 section h2 {
     font-size: 1.8em;
     margin-bottom: 5px;
@@ -87,14 +85,14 @@ section h2 {
     color: #4b3f59;
 }
 
-.secao-flex {
+.secao {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.secao-flex img {
+.secao img {
     width: 200px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(73, 0, 107, 0.1);
@@ -106,7 +104,6 @@ section h2 {
     color: #333;
 }
 
-/* FIGURE E LEGENDA */
 figure {
     text-align: center;
 }
@@ -117,14 +114,13 @@ figcaption {
     color: #555;
 }
 
-/* GALERIA DE IMAGENS */
 .galeria {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 40px;
     flex-wrap: wrap;
-    color:333;
+    color: 333;
 }
 
 .galeria img {
@@ -136,7 +132,7 @@ figcaption {
 }
 
 footer {
-    background: #f6b6b6; /* tom de rosa */
+    background: #f6b6b6;
     color: #4b3f59;
     text-align: center;
     padding: 20px;
@@ -156,4 +152,3 @@ footer nav a {
 footer p {
     margin: 10px 0;
 }
-

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/inscrevar.css">
+    <title>CatAdvice</title>
+</head>
+
+<body>
+    <header>
+        <div class="img-movendo">
+            <img class="imgAnimation" src="../assets/img/gifgatinho.gif" alt="Animação de Gato">
+        </div>
+
+        <h1>INSCREVA-SE</h1>
+        <nav>
+            <div class="container">
+                <div class="divfilho">
+                    <a href="../index.html">Início</a>
+                </div>
+                <div class="divfilho">
+                    <a href="../pages/dicas.html">Dicas</a>
+                </div>
+                <div class="divfilho">
+                    <a href="../pages/inscrevase.html">Inscreva-se </a>
+
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h2>Cadastra-se</h2>
+        <div>
+            <form class="formulario">
+                <fieldset>
+                    <div>
+                        <!-- Colocar um radio contendo o sexo da pessoa e um checkbox perguntando se ela deseja fazer parte do fã-clube. -->
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="txtnome" id="nome" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="txtemail" id="email" required>
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="txtsenha" id="senha" required>
+                        <label for="comentario">Comentário sobre o site:</label>
+                        <textarea id="comentario" name="txtcomentario" required></textarea>
+
+                        <div>
+                            <div class="opcoes">
+                                <legend>Sexo</legend>
+                                <div class="radio">
+                                    <input type="radio" id="feminino" name="sexo">
+                                    <label for="feminino">Feminino</label>
+                                    <input type="radio" id="masculino" name="sexo">
+                                    <label for="masculino">Masculino</label>
+                                </div>
+                            </div>
+                            <div class="checkbox-container">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="Termos" required>
+                                    <label for="Termos">Eu aceito os termos e condições</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="faclube" required>
+                                    <label for="faclube">Concordo em fazer parte do Fã-clube</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button type="submit">Continuar</button>
+                        <button type="reset">Cancelar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <img src="../assets/img/CATADVICELOGOSEMFUNDO.png" alt="Logo CatAdvice">
+        <p>CATADVICE é um site sobre curiosidades, dicas e entretenimento sobre o mundo felino.</p>
+        <nav>
+            <a href="index.html">Início</a> |
+            <a href="pages/generos.html">Dicas</a> |
+            <a href="pages/plataformas.html">Inscreva-se</a>
+        </nav>
+        <p>&copy; 2025 CatAdvice</p>
+    </footer>
+</body>
+
+</html>

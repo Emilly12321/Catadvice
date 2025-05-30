@@ -1,6 +1,3 @@
-/* inscrevar.css - Estilos específicos para a página de inscrição */
-
-/* Estilo da seção principal */
 section {
     max-width: 500px;
     margin: 30px auto;
@@ -14,9 +11,11 @@ section h2 {
     text-align: center;
     margin-bottom: 25px;
     color: #4b3f59;
-    font-size: 1.8em;
+    font-size: 28px;
     position: relative;
 }
+
+/* colocar linha abaixo do titulo*/
 
 section h2::after {
     content: '';
@@ -29,7 +28,6 @@ section h2::after {
     background-color: #f6b6b6;
 }
 
-/* Estilo do formulário */
 .formulario {
     margin-top: 30px;
 }
@@ -39,17 +37,14 @@ fieldset {
     padding: 0;
 }
 
-/* Estilo dos campos do formulário */
-.form-group {
-    margin-bottom: 20px;
-}
 
 label {
     display: block;
     margin-bottom: 8px;
+    margin-top: 5px;
     font-weight: bold;
     color: #4b3f59;
-    font-size: 0.95em;
+    font-size: 15px;
 }
 
 input[type="text"],
@@ -60,7 +55,7 @@ textarea {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 15px; 
     transition: all 0.3s;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -77,10 +72,48 @@ textarea:focus {
 
 textarea {
     min-height: 100px;
-    resize: vertical;
+    resize: none;
 }
 
-/* Estilo dos botões */
+
+.checkbox,
+.radio {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container div {
+    margin: auto 0;
+}
+
+.checkbox label,
+.radio label {
+    font-weight: lighter;
+}
+
+.checkbox input,
+.radio input {
+    margin: 0 10px;
+}
+
+.opcoes legend {
+    color: #4b3f59;
+    font-weight: bold;
+    float: left;
+    margin-top: 6px;
+}
+
+
+.opcoes{
+    margin-top: 16px;
+}
+
+
 .form-buttons {
     display: flex;
     justify-content: space-between;
@@ -89,69 +122,37 @@ textarea {
 }
 
 button {
-    padding: 12px 0;
+
+    margin-top: 10px;
+    margin-right: 5px;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s;
     flex: 1;
-}
-
-button[type="submit"] {
-    background-color: #f6b6b6;
+    font-family: Arial, Helvetica, sans-serif;
     color: #4b3f59;
+
 }
 
+button[type="submit"],
 button[type="reset"] {
-    background-color: #e8e6f0;
-    color: #4b3f59;
+    background-color: white;
+    float: right;
+    padding: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #f6b6b6;
+}
+
+button[type="reset"]:hover {
+    background-color: #f6b6b6;
 }
 
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-button:active {
-    transform: translateY(1px);
-}
-
-/* FOOTER — cor ajustada */
-footer {
-    background: #f6b6b6; /* tom de rosa */
-    color: #4b3f59;
-    text-align: center;
-    padding: 20px;
-    margin-top: 80px;
-}
-
-footer img {
-    width: 200px;
-}
-
-footer nav a {
-    color: #4b3f59;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer p {
-    margin: 10px 0;
-}
-/* Responsividade */
-@media (max-width: 600px) {
-    section {
-        padding: 25px;
-        margin: 20px 15px;
-    }
-    
-    .form-buttons {
-        flex-direction: column;
-    }
-    
-    button {
-        width: 100%;
-    }
 }
