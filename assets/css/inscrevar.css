@@ -1,0 +1,157 @@
+/* inscrevar.css - Estilos específicos para a página de inscrição */
+
+/* Estilo da seção principal */
+section {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(73, 0, 107, 0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b3f59;
+    font-size: 1.8em;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #f6b6b6;
+}
+
+/* Estilo do formulário */
+.formulario {
+    margin-top: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+/* Estilo dos campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4b3f59;
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #f6b6b6;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(246, 182, 182, 0.2);
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Estilo dos botões */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    flex: 1;
+}
+
+button[type="submit"] {
+    background-color: #f6b6b6;
+    color: #4b3f59;
+}
+
+button[type="reset"] {
+    background-color: #e8e6f0;
+    color: #4b3f59;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* FOOTER — cor ajustada */
+footer {
+    background: #f6b6b6; /* tom de rosa */
+    color: #4b3f59;
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer nav a {
+    color: #4b3f59;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 10px 0;
+}
+/* Responsividade */
+@media (max-width: 600px) {
+    section {
+        padding: 25px;
+        margin: 20px 15px;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}

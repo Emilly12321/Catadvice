@@ -5,7 +5,8 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <title>CATADVICE</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/inscrevar.css">
+    <title>CatAdvice</title>
 </head>
 
 <body>
@@ -28,35 +29,40 @@
     </header>
     <section>
         <h2>Cadastra-se</h2>
-        <form>
-            <fieldset>
-                <legend>Informações pessoais:</legend>
-                <label for="nome">Nome:</label>
-                <input type="txtnome" id="nome">
-                <label for="email">E-mal:</label>
-                <input type="txtemail" id="email">
-                <label for="senha">Senha:</label>
-                <input type="txtsenha" id="senha">
-                <button value="Cancelar" type="reset">Cancelar</button>
-                <button value="Aceitar" type="submit">Aceitar</button>
-            </fieldset>
-
-        </form>
+        <div>
+            <form class="formulario">
+                <fieldset> 
+                    <!-- Colocar um radio contendo o sexo da pessoa e um checkbox perguntando se ela deseja fazer parte do fã-clube. -->
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">Motivo:</label>
+                        <textarea id="motivo"></textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <div>
-            <img src="../assets/img/CATADVICELOGOSEMFUNDO.png">
-            <p>CATADVICE é um site sobre curiosidades, dicas e entreterimento sobre o mundo felino</p>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>E-mail</p>
-        </div>
-        Copyright &copy; ADS2025
-        <p>CatAdvice</p>
-        <a href="index.html">Início</a>
-        <a href="pages/generos.html">Dicas</a>
-        <a href="pages/plataformas.html">Inscreva-se</a>
+     <footer>
+        <img src="../assets/img/CATADVICELOGOSEMFUNDO.png" alt="Logo CatAdvice">
+        <p>CATADVICE é um site sobre curiosidades, dicas e entretenimento sobre o mundo felino.</p>
+        <nav>
+            <a href="index.html">Início</a> |
+            <a href="pages/generos.html">Dicas</a> |
+            <a href="pages/plataformas.html">Inscreva-se</a>
+        </nav>
+        <p>&copy; 2025 CatAdvice</p>
     </footer>
 </body>
 
